@@ -1,6 +1,7 @@
-package product;
+package com.senla.traning.assembly_line.product;
 
-import product_part.ProductPart;
+import com.senla.traning.assembly_line.product_part.ProductPart;
+
 
 /**
  * @author Dmitry Chueshov 26.05.2020 17:19

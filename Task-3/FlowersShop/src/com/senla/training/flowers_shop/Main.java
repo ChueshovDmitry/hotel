@@ -1,8 +1,8 @@
-package com.senla.training;
+package com.senla.training.flowers_shop;
 
-import com.senla.training.bouquet.SubBouquet;
-import com.senla.training.entity.GardenFlower;
-import com.senla.training.entity.WildFlower;
+import com.senla.training.flowers_shop.bouquet.SubBouquet;
+import com.senla.training.flowers_shop.entity.GardenFlower;
+import com.senla.training.flowers_shop.entity.WildFlower;
 
 
 /**

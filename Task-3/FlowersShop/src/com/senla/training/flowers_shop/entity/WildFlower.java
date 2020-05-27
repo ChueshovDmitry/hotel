@@ -1,4 +1,4 @@
-package com.senla.training.entity;
+package com.senla.training.flowers_shop.entity;
 
 /**
  * @author Dmitry Chueshov 26.05.2020 4:19

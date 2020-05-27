@@ -1,6 +1,7 @@
-package line;
+package com.senla.traning.assembly_line.line;
 
-import product.Product;
+import com.senla.traning.assembly_line.product.Product;
+
 
 /**
  * @author Dmitry Chueshov 26.05.2020 17:18
@@ -9,7 +10,7 @@ import product.Product;
 
 public interface AssemblyLine {
 
-    Product assembleProduct (Product product);
+    Product assembleProduct(Product product);
 
 
 }

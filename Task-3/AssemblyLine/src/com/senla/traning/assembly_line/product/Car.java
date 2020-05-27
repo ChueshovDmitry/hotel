@@ -1,4 +1,8 @@
-package product;
+package com.senla.traning.assembly_line.product;
+import com.senla.traning.assembly_line.product_part.Body;
+import com.senla.traning.assembly_line.product_part.Chassis;
+import com.senla.traning.assembly_line.product_part.Engine;
+import com.senla.traning.assembly_line.product_part.ProductPart;
 import product_part.Body;
 import product_part.Chassis;
 import product_part.Engine;

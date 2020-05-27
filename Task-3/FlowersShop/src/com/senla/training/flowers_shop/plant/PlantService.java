@@ -1,6 +1,4 @@
-package com.senla.training.plant;
-
-import java.math.BigDecimal;
+package com.senla.training.flowers_shop.plant;
 
 /**
  * @author Dmitry Chueshov 26.05.2020 1:09

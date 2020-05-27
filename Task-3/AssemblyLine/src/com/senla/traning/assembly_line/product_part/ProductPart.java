@@ -1,4 +1,4 @@
-package product_part;
+package com.senla.traning.assembly_line.product_part;
 
 /**
  * @author Dmitry Chueshov 26.05.2020 17:19

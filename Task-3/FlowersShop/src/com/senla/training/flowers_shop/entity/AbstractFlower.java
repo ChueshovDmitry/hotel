@@ -1,7 +1,7 @@
-package com.senla.training.entity;
+package com.senla.training.flowers_shop.entity;
 
 
-import com.senla.training.plant.PlantService;
+import com.senla.training.flowers_shop.plant.PlantService;
 
 /**
  * @author Dmitry Chueshov 26.05.2020 0:59

@@ -1,6 +1,6 @@
-package com.senla.training.bouquet;
+package com.senla.training.flowers_shop.bouquet;
 
-import com.senla.training.entity.AbstractFlower;
+import com.senla.training.flowers_shop.entity.AbstractFlower;
 
 /**
  * @author Dmitry Chueshov 26.05.2020 1:17

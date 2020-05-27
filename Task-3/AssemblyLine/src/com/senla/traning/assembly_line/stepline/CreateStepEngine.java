@@ -1,8 +1,7 @@
-package stepline;
+package com.senla.traning.assembly_line.stepline;
 
-import product_part.Body;
-import product_part.Engine;
-import product_part.ProductPart;
+import com.senla.traning.assembly_line.product_part.Engine;
+import com.senla.traning.assembly_line.product_part.ProductPart;
 
 /**
  * @author Dmitry Chueshov 27.05.2020 16:56

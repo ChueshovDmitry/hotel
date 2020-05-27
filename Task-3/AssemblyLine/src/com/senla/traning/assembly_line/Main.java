@@ -1,9 +1,12 @@
-import line.CarLine;
-import product.Car;
-import product.Product;
-import stepline.CreateStepBody;
-import stepline.CreateStepChassis;
-import stepline.CreateStepEngine;
+package com.senla.traning.assembly_line;
+
+import com.senla.traning.assembly_line.line.CarLine;
+import com.senla.traning.assembly_line.product.Car;
+import com.senla.traning.assembly_line.product.Product;
+import com.senla.traning.assembly_line.stepline.CreateStepBody;
+import com.senla.traning.assembly_line.stepline.CreateStepChassis;
+import com.senla.traning.assembly_line.stepline.CreateStepEngine;
+
 
 /**
  * @author Dmitry Chueshov 26.05.2020 23:19
