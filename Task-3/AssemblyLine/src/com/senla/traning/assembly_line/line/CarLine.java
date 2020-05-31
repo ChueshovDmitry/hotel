@@ -30,9 +30,9 @@ public class CarLine implements AssemblyLine {
     @Override
     public Product assembleProduct(Product product) {
         System.out.println(" начало сборки машины");
-            product.installFirstPart(stepBody.bildProductPart());
-            product.installSecondPart(stepChassis.bildProductPart());
-            product.installThirdPart(stepEngine.bildProductPart());
+            product.installFirstPart(this.stepBody.bildProductPart());
+            product.installSecondPart(this.stepChassis.bildProductPart());
+            product.installThirdPart(this.stepEngine.bildProductPart());
         System.out.println("машина собрана");
 
         return product;
