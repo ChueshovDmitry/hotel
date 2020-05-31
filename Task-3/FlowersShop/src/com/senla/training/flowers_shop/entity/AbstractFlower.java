@@ -64,5 +64,15 @@ public abstract class AbstractFlower implements PlantService {
     public void setQuantityFlower(int quantityFlower) {
         this.quantityFlower = quantityFlower;
     }
+
+    @Override
+    public String toString() {
+        return "AbstractFlower{" +
+                "typeFlower='" + typeFlower + '\'' +
+                ", price=" + price +
+                ", nameFlower='" + nameFlower + '\'' +
+                ", quantityFlower=" + quantityFlower +
+                '}';
+    }
 }
 
