@@ -13,13 +13,10 @@ import com.senla.training.flowers_shop.entity.GardenFlower;
 public class Main {
     public static void main(String[] args) {
 
-        Bouquet subBouquet=new Bouquet();
-        AbstractFlower abstractFlower=new GardenFlower("Rose",12,100);
-        AbstractFlower abstractFlower2=new GardenFlower("Chmomile",9,100);
-
-        subBouquet.addFlower(abstractFlower);
-        subBouquet.addFlower(abstractFlower2);
-        subBouquet.getAllPrice();
+        Bouquet bouquet=new Bouquet();
+        bouquet.addFlower(new GardenFlower("Rose",12,100));
+        bouquet.addFlower(new GardenFlower("Chmomile",9,100));
+        bouquet.getAllPrice();
 
 
     }

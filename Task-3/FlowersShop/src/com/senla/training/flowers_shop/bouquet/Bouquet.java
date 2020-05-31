@@ -10,6 +10,7 @@ import com.senla.training.flowers_shop.entity.AbstractFlower;
 public class Bouquet {
 
     int count=0;
+
     private AbstractFlower [] flower = new AbstractFlower[1000];
 
 
