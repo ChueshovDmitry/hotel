@@ -11,31 +11,35 @@ import com.senla.traning.assembly_line.product_part.ProductPart;
  */
 
 public class Car implements Product {
+
     ProductPart body;
     ProductPart chassis;
     ProductPart engine;
 
+    public void setBody(ProductPart body) {
+        setBody(body);
+    }
+
+    public void setChassis(ProductPart chassis) {
+        setBody(chassis);
+    }
+
+    public void setEngine(ProductPart engine) {
+        setEngine(engine);
+    }
+
     @Override
     public void installFirstPart(ProductPart firstProduct) {
-        this.body=firstProduct;
-        if(body instanceof Body) {
-            System.out.println("кузов установлен");
-        }else System.out.println("кузов не установлен");
+
     }
 
     @Override
     public void installSecondPart(ProductPart secondProduct) {
-        this.chassis=secondProduct;
-        if(chassis instanceof Chassis) {
-            System.out.println("шасси установлено");
-        }else System.out.println("шасси не установлен");
+
     }
 
     @Override
     public void installThirdPart(ProductPart thirdProduct) {
         this.engine=thirdProduct;
-        if(engine instanceof Engine) {
-            System.out.println("двигатель установлен");
-        }else System.out.println("двигатель не установлен");
     }
 }
