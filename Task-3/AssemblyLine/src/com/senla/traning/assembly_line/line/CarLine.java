@@ -13,21 +13,26 @@ import com.senla.traning.assembly_line.stepline.CreateStepEngine;
 
 public class CarLine implements AssemblyLine {
 
-    ProductPart[] products =new ProductPart[3];
+    CreateStepBody stepBody;
+
+    CreateStepChassis stepChassis;
+
+    CreateStepEngine stepEngine;
+
 
     public CarLine(CreateStepBody stepBody, CreateStepChassis stepChassis, CreateStepEngine stepEngine){
-        products[0] = stepBody.bildProductPart();
-        products[1] = stepChassis.bildProductPart();
-        products[2] = stepEngine.bildProductPart();
+            this.stepBody=stepBody;
+            this.stepChassis=stepChassis;
+            this.stepEngine=stepEngine;
     }
 
 
     @Override
     public Product assembleProduct(Product product) {
         System.out.println(" начало сборки машины");
-            product.installFirstPart(products[0]);
-            product.installSecondPart(products[1]);
-            product.installThirdPart(products[2]);
+            product.installFirstPart(stepBody.bildProductPart());
+            product.installSecondPart(stepChassis.bildProductPart());
+            product.installThirdPart(stepEngine.bildProductPart());
         System.out.println("машина собрана");
 
         return product;

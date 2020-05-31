@@ -16,30 +16,21 @@ public class Car implements Product {
     ProductPart chassis;
     ProductPart engine;
 
-    public void setBody(ProductPart body) {
-        setBody(body);
-    }
-
-    public void setChassis(ProductPart chassis) {
-        setBody(chassis);
-    }
-
-    public void setEngine(ProductPart engine) {
-        setEngine(engine);
-    }
-
     @Override
     public void installFirstPart(ProductPart firstProduct) {
-
+        this.body=firstProduct;
+        System.out.println("кузов установлен");
     }
 
     @Override
     public void installSecondPart(ProductPart secondProduct) {
-
+        this.chassis=secondProduct;
+        System.out.println("шасси установлено");
     }
 
     @Override
     public void installThirdPart(ProductPart thirdProduct) {
-        this.engine=thirdProduct;
+        this.chassis=engine;
+        System.out.println("жвигатель установлен");
     }
 }
