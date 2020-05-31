@@ -19,14 +19,17 @@ public abstract class AbstractFlower implements PlantService {
     /** name flower in shop */
     private String nameFlower;
 
+    /**quantity Flower in your bouquet */
+    private int quantityFlower;
     /**
      * @param nameFlower name flower in nature
      * @param price price for one flower
      *
      * */
-    public AbstractFlower(String nameFlower, double price) {
+    public AbstractFlower(String nameFlower, double price,int quantityFlower) {
         this.nameFlower = nameFlower;
         this.price = price;
+        this.quantityFlower=quantityFlower;
     }
 
     /**
@@ -54,12 +57,12 @@ public abstract class AbstractFlower implements PlantService {
         return price;
     }
 
-    @Override
-    public String toString() {
-        return "Flower{" +
-                "nameFlower='" + nameFlower + '\'' +
-                ", typeFlower='" + typeFlower + '\'' +
-                ", price=" + price +
-                '}';
+    public int getQuantityFlower() {
+        return quantityFlower;
+    }
+
+    public void setQuantityFlower(int quantityFlower) {
+        this.quantityFlower = quantityFlower;
     }
 }
+

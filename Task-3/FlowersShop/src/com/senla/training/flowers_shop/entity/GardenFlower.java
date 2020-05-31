@@ -9,8 +9,8 @@ package com.senla.training.flowers_shop.entity;
 public class GardenFlower extends AbstractFlower {
 
 
-    public GardenFlower(String nameFlower, double price) {
-        super(nameFlower, price);
+    public GardenFlower(String nameFlower, double price, int quantityFlower) {
+        super(nameFlower, price, quantityFlower);
     }
 
     @Override

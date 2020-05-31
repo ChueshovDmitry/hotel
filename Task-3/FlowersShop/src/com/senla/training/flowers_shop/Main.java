@@ -1,8 +1,8 @@
 package com.senla.training.flowers_shop;
 
-import com.senla.training.flowers_shop.bouquet.SubBouquet;
+import com.senla.training.flowers_shop.bouquet.Bouquet;
+import com.senla.training.flowers_shop.entity.AbstractFlower;
 import com.senla.training.flowers_shop.entity.GardenFlower;
-import com.senla.training.flowers_shop.entity.WildFlower;
 
 
 /**
@@ -13,19 +13,14 @@ import com.senla.training.flowers_shop.entity.WildFlower;
 public class Main {
     public static void main(String[] args) {
 
-        double count = 0;
+        Bouquet subBouquet=new Bouquet();
+        AbstractFlower abstractFlower=new GardenFlower("Rose",12,100);
+        AbstractFlower abstractFlower2=new GardenFlower("Chmomile",9,100);
 
-        SubBouquet[] subBouquets = new SubBouquet[1000];
-        subBouquets[0] = new SubBouquet(new WildFlower("Сhamomile", 200), 2);
-        subBouquets[1] = new SubBouquet(new GardenFlower("Rose",100),3);
-
-        for (SubBouquet s:subBouquets) {
-            if(s!=null){
-                count += s.getSuballprice();
-            } else break;
-        }
+        subBouquet.addFlower(abstractFlower);
+        subBouquet.addFlower(abstractFlower2);
+        subBouquet.getAllPrice();
 
 
-        System.out.println("price over all flowers in your purchase: " +  count);
     }
 }
