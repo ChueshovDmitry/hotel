@@ -3,10 +3,7 @@ import com.senla.traning.assembly_line.product_part.Body;
 import com.senla.traning.assembly_line.product_part.Chassis;
 import com.senla.traning.assembly_line.product_part.Engine;
 import com.senla.traning.assembly_line.product_part.ProductPart;
-import product_part.Body;
-import product_part.Chassis;
-import product_part.Engine;
-import product_part.ProductPart;
+
 
 /**
  * @author Dmitry Chueshov 26.05.2020 22:33
@@ -14,25 +11,30 @@ import product_part.ProductPart;
  */
 
 public class Car implements Product {
-
+    ProductPart body;
+    ProductPart chassis;
+    ProductPart engine;
 
     @Override
     public void installFirstPart(ProductPart firstProduct) {
-        if(firstProduct instanceof Body) {
+        this.body=firstProduct;
+        if(body instanceof Body) {
             System.out.println("кузов установлен");
         }else System.out.println("кузов не установлен");
     }
 
     @Override
     public void installSecondPart(ProductPart secondProduct) {
-        if(secondProduct instanceof Chassis) {
+        this.chassis=secondProduct;
+        if(chassis instanceof Chassis) {
             System.out.println("шасси установлено");
         }else System.out.println("шасси не установлен");
     }
 
     @Override
     public void installThirdPart(ProductPart thirdProduct) {
-        if(thirdProduct instanceof Engine) {
+        this.engine=thirdProduct;
+        if(engine instanceof Engine) {
             System.out.println("двигатель установлен");
         }else System.out.println("двигатель не установлен");
     }
